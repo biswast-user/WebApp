@@ -5,7 +5,9 @@ node {
     // Create an Artifactory Maven instance.
     def rtMaven = Artifactory.newMavenBuild()
     def buildInfo
-    
+   
+	slackSend color: 'good', message: 'Message from Jenkins Pipeline'
+	
  rtMaven.tool = "maven"
 
     stage('Clone sources') {
@@ -28,6 +30,6 @@ node {
         server.publishBuildInfo buildInfo
     }
 
-//	slackSend color: 'good', message: 'Message from Jenkins Pipeline'
+ 
     }
 	 
