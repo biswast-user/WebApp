@@ -6,7 +6,7 @@ node {
     def rtMaven = Artifactory.newMavenBuild()
     def buildInfo
    
-	slackSend color: 'good', message: 'Message from Jenkins Pipeline'
+	slackSend(channel: '#general', message: 'Message from Jenkins Pipeline1')
 	
  rtMaven.tool = "maven"
 
@@ -32,7 +32,7 @@ node {
 
 	// Slack message 
 	
- slackSend(channel: '#general', message: 'Message from Jenkins Pipeline')
+ slackSend(channel: '#general', message: 'Message from Jenkins Pipeline2')
 // def slackResponse = slackSend(channel: '#general', message: "Started build")
 // slackSend(channel: slackResponse.threadId, message: "Build still in progress")
 // slackSend(
