@@ -30,6 +30,16 @@ node {
         server.publishBuildInfo buildInfo
     }
 
- 
+	// Slack message 
+	
+ slackSend(channel: '#general', message: 'Message from Jenkins Pipeline')
+// def slackResponse = slackSend(channel: '#general', message: "Started build")
+// slackSend(channel: slackResponse.threadId, message: "Build still in progress")
+// slackSend(
+//    channel: slackResponse.threadId,
+//    replyBroadcast: true,
+//    message: "Build failed. Broadcast to channel for better visibility."
+// )
+	
     }
 	 
