@@ -32,7 +32,10 @@ node {
 
 	// Slack message 
 	
- slackSend(channel: '#general', message: 'Message from Jenkins Pipeline2')
+ slackSend(channel: '#general', color: 'good', message: 'Message from Jenkins Pipeline2')
+	
+def slackResponse = slackSend(channel: "#general", message: "Here is the primary message")	
+slackResponse.addReaction("thumbsup")
 // def slackResponse = slackSend(channel: '#general', message: "Started build")
 // slackSend(channel: slackResponse.threadId, message: "Build still in progress")
 // slackSend(
