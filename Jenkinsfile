@@ -27,5 +27,7 @@ node {
     stage('Publish build info') {
         server.publishBuildInfo buildInfo
     }
+
+	slackSend color: 'good', message: 'Message from Jenkins Pipeline'
     }
 	 
