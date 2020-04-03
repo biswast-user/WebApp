@@ -28,6 +28,6 @@ node {
         server.publishBuildInfo buildInfo
     }
 
-	slackSend color: 'good', message: 'Message from Jenkins Pipeline'
+//	slackSend color: 'good', message: 'Message from Jenkins Pipeline'
     }
 	 
