@@ -32,7 +32,9 @@ node {
 
 	// Slack message
 	
-slackSend(channel: "#general", message: "Here is the primary message")
+slackSend channel: '#general', message: 'This is primary pipeline'
+	
+// slackSend(channel: "#general", message: "Here is the primary message")
 	
 // slackSend(channel: "#newtest", message: "https://www.nytimes.com", sendAsText: true)
 	
