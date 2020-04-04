@@ -30,7 +30,9 @@ node {
         server.publishBuildInfo buildInfo
     }
 
-	// Slack message 
+	// Slack message
+	
+slackSend(channel: "#general", message: "Here is the primary message")
 	
 // slackSend(channel: "#newtest", message: "https://www.nytimes.com", sendAsText: true)
 	
