@@ -32,7 +32,7 @@ node {
 
 	// Slack message 
 	
-slackSend(channel: "#newtest", message: "https://www.nytimes.com", sendAsText: true)
+// slackSend(channel: "#newtest", message: "https://www.nytimes.com", sendAsText: true)
 	
  // slackSend(channel: '#general', color: 'good', message: 'Message from Jenkins Pipeline2')
 	
