@@ -32,7 +32,9 @@ node {
 
 	// Slack message
 	
-	slackSend channel: '# devops', color: 'red', message: 'Hi My massage', notifyCommitters: true, teamDomain: 'tcs-lgb3679.slack.com', tokenCredentialId: 'TCS'
+	slackSend channel: '#devops', color: 'Red', message: 'My message', teamDomain: 'tcs-lgb3679.slack.com', tokenCredentialId: 'slack-value'
+	
+	// slackSend channel: '# devops', color: 'red', message: 'Hi My massage', notifyCommitters: true, teamDomain: 'tcs-lgb3679.slack.com', tokenCredentialId: 'TCS'
 	
 // slackSend channel: '#general', message: 'This is primary pipeline'
 	
